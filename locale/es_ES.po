@@ -1,0 +1,275 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:production.bom.extra_product.add.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:production.bom.input,extra_products:"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "field:production.bom.input.extra_product,bom_input:"
+msgid "BOM Input"
+msgstr "Entrada LdM"
+
+msgctxt "field:production.bom.input.extra_product,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:production.bom.input.extra_product,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:production.bom.input.extra_product,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:production.bom.input.extra_product,product:"
+msgid "Product"
+msgstr "Producto"
+
+msgctxt "field:production.bom.input.extra_product,product_uom_category:"
+msgid "Product Uom Category"
+msgstr "Categoría UdM de producto"
+
+msgctxt "field:production.bom.input.extra_product,quantity:"
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgctxt "field:production.bom.input.extra_product,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:production.bom.input.extra_product,unit_digits:"
+msgid "Unit Digits"
+msgstr "Decimales de la unidad"
+
+msgctxt "field:production.bom.input.extra_product,uom:"
+msgid "Uom"
+msgstr "UdM"
+
+msgctxt "field:production.bom.input.extra_product,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:production.bom.input.extra_product,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:production.bom.output,extra_products:"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "field:production.bom.output.extra_product,bom_output:"
+msgid "BOM Output"
+msgstr "Salida LdM"
+
+msgctxt "field:production.bom.output.extra_product,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:production.bom.output.extra_product,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:production.bom.output.extra_product,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:production.bom.output.extra_product,product:"
+msgid "Product"
+msgstr "Producto"
+
+msgctxt "field:production.bom.output.extra_product,product_uom_category:"
+msgid "Product Uom Category"
+msgstr "Categoría UdM de producto"
+
+msgctxt "field:production.bom.output.extra_product,quantity:"
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgctxt "field:production.bom.output.extra_product,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:production.bom.output.extra_product,unit_digits:"
+msgid "Unit Digits"
+msgstr "Decimales de la unidad"
+
+msgctxt "field:production.bom.output.extra_product,uom:"
+msgid "Uom"
+msgstr "UdM"
+
+msgctxt "field:production.bom.output.extra_product,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:production.bom.output.extra_product,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:stock.move,extra_products:"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "field:stock.move.extra_product,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:stock.move.extra_product,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:stock.move.extra_product,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:stock.move.extra_product,move:"
+msgid "Move"
+msgstr "Movimiento"
+
+msgctxt "field:stock.move.extra_product,product:"
+msgid "Product"
+msgstr "Producto"
+
+msgctxt "field:stock.move.extra_product,product_uom_category:"
+msgid "Product Uom Category"
+msgstr "Categoría UdM de producto"
+
+msgctxt "field:stock.move.extra_product,purchase_request:"
+msgid "Purchase Request"
+msgstr "Solicitud de compra"
+
+msgctxt "field:stock.move.extra_product,quantity:"
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgctxt "field:stock.move.extra_product,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:stock.move.extra_product,state:"
+msgid "State"
+msgstr "Estado"
+
+msgctxt "field:stock.move.extra_product,unit_digits:"
+msgid "Unit Digits"
+msgstr "Decimales de la unidad"
+
+msgctxt "field:stock.move.extra_product,uom:"
+msgid "Uom"
+msgstr "UdM"
+
+msgctxt "field:stock.move.extra_product,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:stock.move.extra_product,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "help:production.bom.input,extra_products:"
+msgid "Additional services from which create purchase requests."
+msgstr "Servicios adicionales con los que crear solicitudes de compra."
+
+msgctxt "help:production.bom.output,extra_products:"
+msgid "Additional services from which create purchase requests."
+msgstr "Servicios adicionales con los que crear solicitudes de compra."
+
+msgctxt "help:stock.move,extra_products:"
+msgid "Additional services from which create purchase requests."
+msgstr "Servicios adicionales con los que crear solicitudes de compra."
+
+msgctxt "model:ir.action,name:act_extra_product_production"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "model:ir.action,name:act_extra_product_production_bom_input"
+msgid "Input Extra products"
+msgstr "Productos extra de entrada"
+
+msgctxt "model:ir.action,name:act_extra_product_production_bom_output"
+msgid "Output Extra products"
+msgstr "Productos extra de salida"
+
+msgctxt "model:ir.action,name:act_extra_product_shipment_in"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "model:ir.action,name:act_extra_product_shipment_internal"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "model:ir.action,name:act_extra_product_shipment_out"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "model:ir.action,name:act_production_bom_extra_product_add"
+msgid "Add extra products to inputs/outputs from BOM"
+msgstr "Añadir productos extra a entradas/salidas desde lista de materiales"
+
+msgctxt "model:production.bom.extra_product.add.start,name:"
+msgid "Add extra products to inputs/outputs from BOM"
+msgstr "Añadir productos extra a entradas/salidas desde lista de materiales"
+
+msgctxt "model:production.bom.input.extra_product,name:"
+msgid "BOM Input Extra Product"
+msgstr "Producto extra entrada LdM"
+
+msgctxt "model:production.bom.output.extra_product,name:"
+msgid "BOM Output Extra Product"
+msgstr "Producto extra salida LdM"
+
+msgctxt "model:stock.move.extra_product,name:"
+msgid "Stock Move Extra Product"
+msgstr "Producto extra de movimiento de stock"
+
+msgctxt "selection:stock.move.extra_product,state:"
+msgid "Assigned"
+msgstr "Reservado"
+
+msgctxt "selection:stock.move.extra_product,state:"
+msgid "Canceled"
+msgstr "Cancelado"
+
+msgctxt "selection:stock.move.extra_product,state:"
+msgid "Done"
+msgstr "Realizado"
+
+msgctxt "selection:stock.move.extra_product,state:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "view:production.bom.extra_product.add.start:"
+msgid "Add extra products from BOM"
+msgstr "Añadir productos extra desde lista de materiales"
+
+msgctxt "view:production.bom.extra_product.add.start:"
+msgid ""
+"Add extra products to inputs/outputs from BOM? The current extra products in"
+" inputs/outputs will be removed."
+msgstr ""
+"Añadir productos extra a entradas/salidas desde lista de materiales? Los "
+"productos extra existentes en entradas/salidas serán eliminados."
+
+msgctxt "view:production.bom.input.extra_product:"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "view:production.bom.output.extra_product:"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "view:stock.move.extra_product:"
+msgid "Extra products"
+msgstr "Productos extra"
+
+msgctxt "wizard_button:production.bom.extra_product.add,start,add_:"
+msgid "Add"
+msgstr "Añadir"
+
+msgctxt "wizard_button:production.bom.extra_product.add,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
