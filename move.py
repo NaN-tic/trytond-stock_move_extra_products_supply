@@ -1,6 +1,7 @@
 # This file is part of the stock_move_extra_products_supply module for Tryton.
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
+from decimal import Decimal
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.pyson import Eval, In
 from trytond.transaction import Transaction
@@ -32,6 +33,11 @@ class ExtraProductMixin:
     quantity = fields.Float('Quantity', required=True,
         digits=(16, Eval('unit_digits', 2)),
         depends=['unit_digits'])
+    cost_price = fields.Numeric('Cost Price',
+        digits=(16, Eval('currency_digits', 2)),
+        depends=['currency_digits'])
+    currency_digits = fields.Function(fields.Integer('Currency Digits'),
+        'on_change_with_currency_digits')
 
     @staticmethod
     def default_quantity():
@@ -47,18 +53,35 @@ class ExtraProductMixin:
             return self.uom.digits
         return 2
 
+    def on_change_with_currency_digits(self, name=None):
+        Company = Pool().get('company.company')
+        company = Transaction().context.get('company')
+        if company:
+            company = Company(company)
+            return company.currency.digits
+        return 2
+
     @fields.depends('product')
     def on_change_with_product_uom_category(self, name=None):
         if self.product:
             return self.product.default_uom_category.id
 
-    @fields.depends('product')
+    @fields.depends('product', 'quantity')
     def on_change_product(self):
         res = {}
         if self.product:
             res['uom'] = self.product.default_uom.id
             res['uom.rec_name'] = self.product.default_uom.rec_name
             res['unit_digits'] = self.product.default_uom.digits
+            res.update(self.on_change_quantity())
+        return res
+
+    @fields.depends('product', 'quantity')
+    def on_change_quantity(self):
+        res = {}
+        if self.product:
+            qty = self.quantity or 1
+            res['cost_price'] = Decimal(str(qty)) * self.product.cost_price
         return res
 
 

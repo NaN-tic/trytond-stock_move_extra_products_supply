@@ -6,6 +6,7 @@ from .move import *
 from .purchase_request import *
 from .shipment import *
 from .bom import *
+from .production import *
 
 
 def register():
@@ -18,6 +19,7 @@ def register():
         BOMOutputExtraProduct,
         BOMInput,
         BOMOutput,
+        Production,
         AddExtraProductBOMStart,
         module='stock_move_extra_products_supply', type_='model')
     Pool.register(

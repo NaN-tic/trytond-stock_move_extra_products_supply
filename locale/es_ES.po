@@ -2,6 +2,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:production,extra_products_cost:"
+msgid "Extra Product Cost"
+msgstr "Coste producto extra"
+
 msgctxt "field:production.bom.extra_product.add.start,id:"
 msgid "ID"
 msgstr "ID"
@@ -14,6 +18,10 @@ msgctxt "field:production.bom.input.extra_product,bom_input:"
 msgid "BOM Input"
 msgstr "Entrada LdM"
 
+msgctxt "field:production.bom.input.extra_product,cost_price:"
+msgid "Cost Price"
+msgstr "Precio de coste"
+
 msgctxt "field:production.bom.input.extra_product,create_date:"
 msgid "Create Date"
 msgstr "Fecha creación"
@@ -21,6 +29,10 @@ msgstr "Fecha creación"
 msgctxt "field:production.bom.input.extra_product,create_uid:"
 msgid "Create User"
 msgstr "Usuario creación"
+
+msgctxt "field:production.bom.input.extra_product,currency_digits:"
+msgid "Currency Digits"
+msgstr "Decimales de moneda"
 
 msgctxt "field:production.bom.input.extra_product,id:"
 msgid "ID"
@@ -66,6 +78,10 @@ msgctxt "field:production.bom.output.extra_product,bom_output:"
 msgid "BOM Output"
 msgstr "Salida LdM"
 
+msgctxt "field:production.bom.output.extra_product,cost_price:"
+msgid "Cost Price"
+msgstr "Precio de coste"
+
 msgctxt "field:production.bom.output.extra_product,create_date:"
 msgid "Create Date"
 msgstr "Fecha creación"
@@ -73,6 +89,10 @@ msgstr "Fecha creación"
 msgctxt "field:production.bom.output.extra_product,create_uid:"
 msgid "Create User"
 msgstr "Usuario creación"
+
+msgctxt "field:production.bom.output.extra_product,currency_digits:"
+msgid "Currency Digits"
+msgstr "Decimales de moneda"
 
 msgctxt "field:production.bom.output.extra_product,id:"
 msgid "ID"
@@ -114,6 +134,10 @@ msgctxt "field:stock.move,extra_products:"
 msgid "Extra products"
 msgstr "Productos extra"
 
+msgctxt "field:stock.move.extra_product,cost_price:"
+msgid "Cost Price"
+msgstr "Precio de coste"
+
 msgctxt "field:stock.move.extra_product,create_date:"
 msgid "Create Date"
 msgstr "Fecha creación"
@@ -121,6 +145,10 @@ msgstr "Fecha creación"
 msgctxt "field:stock.move.extra_product,create_uid:"
 msgid "Create User"
 msgstr "Usuario creación"
+
+msgctxt "field:stock.move.extra_product,currency_digits:"
+msgid "Currency Digits"
+msgstr "Decimales de moneda"
 
 msgctxt "field:stock.move.extra_product,id:"
 msgid "ID"

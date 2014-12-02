@@ -7,4 +7,5 @@ copyright notices and license terms. -->
     <field name="product"/> 
     <field name="quantity"/>
     <field name="uom"/>
+    <field name="cost_price"/>
 </tree>

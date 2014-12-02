@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- This file is part production_timesheet module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/notebook/page[@id=&quot;other&quot;]/field[@name=&quot;cost&quot;]"
+            position="after">
+        <label name="extra_products_cost"/>
+        <field name="extra_products_cost"/>
+        <label name="total_cost"/>
+        <field name="total_cost"/>
+    </xpath>
+</data>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- This file is part production_timesheet module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="production_view_form">
+            <field name="model">production</field>
+            <field name="inherit" ref="production.production_view_form"/>
+            <field name="name">production_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="production_bom_extra_product_add_start_view_form">
+            <field name="model">production.bom.extra_product.add.start</field>
+            <field name="type">form</field>
+            <field name="name">production_bom_extra_product_add_start_form</field>
+        </record>
+        <record model="ir.action.wizard" id="act_production_bom_extra_product_add">
+            <field name="name">Add extra products to inputs/outputs from BOM</field>
+            <field name="wiz_name">production.bom.extra_product.add</field>
+        </record>
+        <record model="ir.action.keyword"
+            id="act_production_bom_extra_product_add_keyword1">
+            <field name="keyword">form_action</field>
+            <field name="model">production,-1</field>
+            <field name="action" ref="act_production_bom_extra_product_add"/>
+        </record>
+        <record model="ir.action-res.group"
+            id="act_production_bom_extra_product_add-group_production">
+            <field name="action" ref="act_production_bom_extra_product_add"/>
+            <field name="group" ref="production.group_production"/>
+        </record>
+    </data>
+</tryton>
