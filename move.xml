@@ -25,7 +25,7 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window" id="act_extra_product_shipment_out">
             <field name="name">Extra products</field>
             <field name="res_model">stock.move.extra_product</field>
-            <field name="domain">[('move.shipment', '=', (('stock.shipment.out', Eval('active_id')))),  ('move.to_location.type', '=', 'customer')]</field>
+            <field name="domain">[('move.shipment', '=', ('stock.shipment.out', Eval('active_id'))), ('move.to_location.type', '=', 'customer')]</field>
         </record>
         <record model="ir.action.keyword" id="act_open_extra_product_shipment_out_keyword1">
             <field name="keyword">form_relate</field>
@@ -40,7 +40,7 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window" id="act_extra_product_shipment_in">
             <field name="name">Extra products</field>
             <field name="res_model">stock.move.extra_product</field>
-            <field name="domain">[('move.shipment', '=', (('stock.shipment.in', Eval('active_id')))),  ('move.from_location.type', '=', 'supplier')]</field>
+            <field name="domain">[('move.shipment', '=', ('stock.shipment.in', Eval('active_id'))), ('move.from_location.type', '=', 'supplier')]</field>
         </record>
         <record model="ir.action.keyword" id="act_open_extra_product_shipment_in_keyword1">
             <field name="keyword">form_relate</field>
@@ -55,7 +55,7 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window" id="act_extra_product_shipment_internal">
             <field name="name">Extra products</field>
             <field name="res_model">stock.move.extra_product</field>
-            <field name="domain">[('move.shipment', '=', (('stock.shipment.internal',  Eval('active_id'))))]</field>
+            <field name="domain">[('move.shipment', '=', ('stock.shipment.internal', Eval('active_id')))]</field>
         </record>
         <record model="ir.action.keyword" id="act_open_extra_product_shipment_internal_keyword1">
             <field name="keyword">form_relate</field>
