@@ -13,5 +13,7 @@ copyright notices and license terms. -->
     <field name="uom"/>
     <label name="cost_price"/>
     <field name="cost_price"/>
+    <label name="purchase_request"/>
+    <field name="purchase_request"/>
     <field name="state" invisible="1"/>
 </form>
