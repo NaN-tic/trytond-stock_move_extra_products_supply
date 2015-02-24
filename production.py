@@ -27,7 +27,7 @@ class Production:
     def on_change_with_extra_products_cost(self, name=None):
         ep_cost = Decimal('0')
         for line in self.inputs + self.outputs:
-            for ep in line.extra_products:
+            for ep in getattr(line, 'extra_products', []):
                 ep_cost += ep.cost_price if ep.cost_price else Decimal('0')
         return ep_cost
 
