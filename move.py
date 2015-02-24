@@ -140,6 +140,8 @@ class MoveExtraProduct(ModelSQL, ModelView, ExtraProductMixin):
             request.supply_date = self.move.planned_date
             request.company = self.move.company
             request.origin = self.move
+            request.warehouse = (self.move.from_location.warehouse or
+                self.move.to_location.warehouse)
 
         return request
 
