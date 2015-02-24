@@ -19,7 +19,7 @@ class ExtraProductMixin:
     'Generic Extra Product'
     product = fields.Many2One('product.product', 'Product', required=True,
         select=True,
-        domain=[('purchasable', '=', True), ('type', '=', 'service')])
+        domain=[('purchasable', '=', True)])
     product_uom_category = fields.Function(
         fields.Many2One('product.uom.category', 'Product Uom Category'),
         'on_change_with_product_uom_category')
