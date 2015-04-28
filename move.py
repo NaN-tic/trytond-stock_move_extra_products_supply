@@ -164,6 +164,10 @@ class Move:
 
     def create_purchase_requests(self):
         'Create the purchase requests for the extra products'
+        try:
+            super(Move, self).create_purchase_requests()
+        except AttributeError:
+            pass
         for extra in self.extra_products:
             request = extra.get_purchase_request()
             if not request:
