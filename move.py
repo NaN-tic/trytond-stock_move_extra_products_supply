@@ -182,7 +182,8 @@ class Move:
         'when assing out and internal shipments'
         super(Move, cls).assign(moves)
         for move in moves:
-            if (move.from_location.type == 'storage'
+            if (move.extra_products
+                    and move.from_location.type == 'storage'
                     and move.to_location.type in ('storage', 'production')):
                 move.create_purchase_requests()
 
