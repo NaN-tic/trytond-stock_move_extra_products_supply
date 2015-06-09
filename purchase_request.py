@@ -11,11 +11,5 @@ class PurchaseRequest:
     __name__ = 'purchase.request'
 
     @classmethod
-    def origin_get(cls):
-        Model = Pool().get('ir.model')
-        res = super(PurchaseRequest, cls).origin_get()
-        model, = Model.search([
-                ('model', '=', 'stock.move'),
-                ])
-        res.append([model.model, model.name])
-        return res
+    def _get_origin(cls):
+        return super(PurchaseRequest, cls)._get_origin() | {'stock.move'}
