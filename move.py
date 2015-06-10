@@ -114,14 +114,15 @@ class MoveExtraProduct(ModelSQL, ModelView, ExtraProductMixin):
         pool = Pool()
         Uom = pool.get('product.uom')
         Request = pool.get('purchase.request')
+        Date = pool.get('ir.date')
 
         if (self.purchase_request and
                 self.purchase_request.state in ['purchased', 'done']):
             return
 
+        date = self.move.planned_date or Date.today()
         product = self.product
-        supplier, purchase_date = Request.find_best_supplier(product,
-            self.move.planned_date)
+        supplier, purchase_date = Request.find_best_supplier(product, date)
         uom = product.purchase_uom or product.default_uom
         quantity = Uom.compute_qty(self.uom, self.quantity, uom)
         with Transaction().set_user(0, set_context=True):
