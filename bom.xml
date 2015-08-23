@@ -42,7 +42,10 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window" id="act_extra_product_production_bom_input">
             <field name="name">Input Extra products</field>
             <field name="res_model">production.bom.input.extra_product</field>
-            <field name="domain">[('bom_input.bom', '=', Eval('active_id'))]</field>
+            <field name="domain"></field>
+            <field name="domain"
+                eval="[('bom_input.bom', '=', Eval('active_id'))]"
+                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_extra_product_production_bom_input_keyword1">
             <field name="keyword">form_relate</field>
@@ -57,7 +60,9 @@ copyright notices and license terms. -->
         <record model="ir.action.act_window" id="act_extra_product_production_bom_output">
             <field name="name">Output Extra products</field>
             <field name="res_model">production.bom.output.extra_product</field>
-            <field name="domain">[('bom_output.bom', '=', Eval('active_id'))]</field>
+            <field name="domain"
+                eval="[('bom_output.bom', '=', Eval('active_id'))]"
+                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_extra_product_production_bom_output_keyword1">
             <field name="keyword">form_relate</field>
