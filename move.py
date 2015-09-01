@@ -68,21 +68,18 @@ class ExtraProductMixin:
 
     @fields.depends('product', 'quantity')
     def on_change_product(self):
-        res = {}
         if self.product:
-            res['uom'] = self.product.default_uom.id
-            res['uom.rec_name'] = self.product.default_uom.rec_name
-            res['unit_digits'] = self.product.default_uom.digits
-            res.update(self.on_change_quantity())
-        return res
+            self.uom = self.product.default_uom
+            self.uom.rec_name = self.product.default_uom.rec_name
+            self.unit_digits = self.product.default_uom.digits
+            self.on_change_quantity()
 
     @fields.depends('product', 'quantity')
     def on_change_quantity(self):
-        res = {}
+        self.cost_price = Decimal(0.0)
         if self.product:
             qty = self.quantity or 1
-            res['cost_price'] = Decimal(str(qty)) * self.product.cost_price
-        return res
+            self.cost_price = Decimal(str(qty)) * self.product.cost_price
 
 
 class MoveExtraProduct(ModelSQL, ModelView, ExtraProductMixin):
