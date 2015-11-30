@@ -2,14 +2,13 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 from trytond.model import ModelView, ModelSQL, fields
-from trytond.transaction import Transaction
-from trytond.pool import PoolMeta, Pool
+from trytond.pool import PoolMeta
 from .move import ExtraProductMixin
+
 __all__ = [
     'BOMInputExtraProduct', 'BOMOutputExtraProduct',
     'BOMInput', 'BOMOutput',
-]
-
+    ]
 __metaclass__ = PoolMeta
 
 
