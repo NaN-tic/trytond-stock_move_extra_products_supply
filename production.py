@@ -7,6 +7,7 @@ from trytond.wizard import Wizard, StateView, StateTransition, Button
 from trytond.pyson import Eval
 from trytond.transaction import Transaction
 from trytond.pool import Pool, PoolMeta
+from trytond.modules.product import price_digits
 
 __all__ = ['Production', 'AddExtraProductBOMStart', 'AddExtraProductBOM']
 __metaclass__ = PoolMeta
@@ -15,13 +16,9 @@ __metaclass__ = PoolMeta
 class Production:
     __name__ = "production"
     extra_products_cost = fields.Function(fields.Numeric('Extra Product Cost',
-            digits=(16, Eval('currency_digits', 2)),
-            depends=['currency_digits']),
-        'on_change_with_extra_products_cost')
+        digits=price_digits), 'on_change_with_extra_products_cost')
     total_cost = fields.Function(fields.Numeric('Total Cost',
-            digits=(16, Eval('currency_digits', 2)),
-            depends=['currency_digits']),
-        'on_change_with_total_cost')
+        digits=price_digits), 'on_change_with_total_cost')
 
     @fields.depends('inputs', 'outputs')
     def on_change_with_extra_products_cost(self, name=None):
