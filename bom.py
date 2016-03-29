@@ -9,7 +9,6 @@ __all__ = [
     'BOMInputExtraProduct', 'BOMOutputExtraProduct',
     'BOMInput', 'BOMOutput',
     ]
-__metaclass__ = PoolMeta
 
 
 class BOMInputExtraProduct(ModelSQL, ModelView, ExtraProductMixin):
@@ -27,6 +26,7 @@ class BOMOutputExtraProduct(ModelSQL, ModelView, ExtraProductMixin):
 
 
 class BOMInput:
+    __metaclass__ = PoolMeta
     __name__ = 'production.bom.input'
     extra_products = fields.One2Many('production.bom.input.extra_product',
         'bom_input', 'Extra products',
@@ -38,6 +38,7 @@ class BOMInput:
 
 
 class BOMOutput:
+    __metaclass__ = PoolMeta
     __name__ = 'production.bom.output'
     extra_products = fields.One2Many('production.bom.output.extra_product',
         'bom_output', 'Extra products',

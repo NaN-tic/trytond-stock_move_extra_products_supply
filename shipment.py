@@ -4,10 +4,9 @@
 from trytond.pool import Pool, PoolMeta
 __all__ = ['ShipmentOut']
 
-__metaclass__ = PoolMeta
-
 
 class ShipmentOut:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.shipment.out'
 
     def _get_inventory_move(self, move):

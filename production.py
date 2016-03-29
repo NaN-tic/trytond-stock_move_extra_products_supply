@@ -10,10 +10,10 @@ from trytond.pool import Pool, PoolMeta
 from trytond.modules.product import price_digits
 
 __all__ = ['Production', 'AddExtraProductBOMStart', 'AddExtraProductBOM']
-__metaclass__ = PoolMeta
 
 
 class Production:
+    __metaclass__ = PoolMeta
     __name__ = "production"
     extra_products_cost = fields.Function(fields.Numeric('Extra Product Cost',
         digits=price_digits), 'on_change_with_extra_products_cost')

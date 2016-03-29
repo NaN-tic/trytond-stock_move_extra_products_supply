@@ -8,7 +8,6 @@ from trytond.transaction import Transaction
 from trytond.pool import Pool, PoolMeta
 __all__ = ['MoveExtraProduct', 'Move']
 
-__metaclass__ = PoolMeta
 
 STATES = {
     'readonly': In(Eval('state'), ['cancel', 'assigned', 'done']),
@@ -151,6 +150,7 @@ class MoveExtraProduct(ModelSQL, ModelView, ExtraProductMixin):
 
 
 class Move:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.move'
     extra_products = fields.One2Many('stock.move.extra_product', 'move',
         'Extra products',
